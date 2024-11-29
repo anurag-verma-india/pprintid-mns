@@ -102,7 +102,7 @@ for i in range(len(png_files)):
     path_to_file = os.path.join("cropped-pngs", png_files[i])
     file_to_paste = Image.open(path_to_file)
 
-    new_height = mm_to_pixel(50)
+    new_height = mm_to_pixel(60)
     print(new_height)
     width, height = file_to_paste.size
     new_width = int(round(new_height * width / height))
