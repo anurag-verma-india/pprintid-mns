@@ -27,6 +27,11 @@ Millimeters to Pixels Formula:
 pixels = millimeters * ( PPI / 25.4 )
 """
 
+for filename in os.listdir("cropped-pngs"):
+    os.remove(os.path.join("cropped-pngs", filename))
+
+for filename in os.listdir("png-files"):
+    os.remove(os.path.join("png-files", filename))
 
 ## mm to pixels conversion (at a given ppi)
 def mm_to_pixel(mm: float):
@@ -122,11 +127,6 @@ bg_image.save("joined-file/output.png")
 
 # TODO: Delete intermediate png files
 
-for filename in os.listdir("cropped-pngs"):
-    os.remove(os.path.join("cropped-pngs", filename))
-
-for filename in os.listdir("png-files"):
-    os.remove(os.path.join("png-files", filename))
 
 # os.remove("cropped-pngs")
 # os.remove("png-files")

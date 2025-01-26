@@ -1,4 +1,5 @@
 from PIL import Image
+# Image.LOAD_TRUNCATED_IMAGES = True
 import os
 
 # https://stackoverflow.com/questions/48395434/how-to-crop-or-remove-white-background-from-an-image
